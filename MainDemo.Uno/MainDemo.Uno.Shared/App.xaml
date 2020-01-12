@@ -1,0 +1,21 @@
+﻿<Application
+    x:Class="MainDemo.Uno.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MainDemo.Uno"
+    RequestedTheme="Light">
+  <Application.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/Themes/MaterialDesign.xaml" />
+        <ResourceDictionary Source="/Themes/MaterialDesignColor.Indigo.Named.xaml" />
+      </ResourceDictionary.MergedDictionaries>
+      <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+          <SolidColorBrush x:Key="PrimaryHueLightBrush" Color="{StaticResource IndigoPrimary900}"/>
+          <SolidColorBrush x:Key="PrimaryHueLightForegroundBrush" Color="{StaticResource IndigoPrimary300Foreground}"/>
+        </ResourceDictionary>
+      </ResourceDictionary.ThemeDictionaries>
+    </ResourceDictionary>
+  </Application.Resources>
+</Application>
