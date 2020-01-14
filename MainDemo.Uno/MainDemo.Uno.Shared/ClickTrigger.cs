@@ -36,7 +36,7 @@ namespace MainDemo.Uwp
             SetActive(false);
         }
     }
-    public class RippleAnimated : ContentControl, INotifyPropertyChanged
+    public partial class RippleAnimated : ContentControl, INotifyPropertyChanged
     {
         protected override void OnPointerPressed(PointerRoutedEventArgs e)
         {
